@@ -1,0 +1,12 @@
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\obj\x86\Debug\SincronizarConcordancia.csproj.GenerateResource.Cache
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\bin\Debug\SincronizarConcordancia.exe.config
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\obj\x86\Debug\SincronizarConcordancia.SincronizarConcordanciaI.resources
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\obj\x86\Debug\SincronizarConcordancia.ProjectInstaller.resources
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\bin\Debug\SincronizarConcordancia.exe
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\bin\Debug\SincronizarConcordancia.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\obj\x86\Debug\SincronizarConcordancia.exe
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\obj\x86\Debug\SincronizarConcordancia.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\obj\x86\Debug\SincronizarConcordancia.csprojResolveAssemblyReference.cache
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\Sincornizar Concordancias\ServivioWinTasaCambio\bin\Debug\Newtonsoft.Json.pdb

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WsTramitesInstitucionLinea" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://wstramiteslineapruebas.dgi.gob.ni/WsTramitesInstitucionLinea.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://wstramiteslineapruebas.dgi.gob.ni/WsTramitesInstitucionLinea.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://wstramiteslineapruebas.dgi.gob.ni/WsTramitesInstitucionLinea.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listCatalogos_InputMessage">
+    <wsdl:part name="parameters" element="tns:listCatalogos" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listCatalogos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listCatalogosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listPagos_InputMessage">
+    <wsdl:part name="parameters" element="tns:listPagos" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listPagos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listPagosServicio_InputMessage">
+    <wsdl:part name="parameters" element="tns:listPagosServicio" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listPagosServicio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listPagosServicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_pagoServicio_InputMessage">
+    <wsdl:part name="parameters" element="tns:pagoServicio" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_pagoServicio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pagoServicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listAnuladosPagos_InputMessage">
+    <wsdl:part name="parameters" element="tns:listAnuladosPagos" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listAnuladosPagos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listAnuladosPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listPagosDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:listPagosDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IWsTramitesInstitucionLinea_listPagosDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listPagosDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWsTramitesInstitucionLinea">
+    <wsdl:operation name="listCatalogos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listCatalogos" message="tns:IWsTramitesInstitucionLinea_listCatalogos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listCatalogosResponse" message="tns:IWsTramitesInstitucionLinea_listCatalogos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listPagos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listPagos" message="tns:IWsTramitesInstitucionLinea_listPagos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listPagosResponse" message="tns:IWsTramitesInstitucionLinea_listPagos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listPagosServicio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listPagosServicio" message="tns:IWsTramitesInstitucionLinea_listPagosServicio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listPagosServicioResponse" message="tns:IWsTramitesInstitucionLinea_listPagosServicio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pagoServicio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/pagoServicio" message="tns:IWsTramitesInstitucionLinea_pagoServicio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/pagoServicioResponse" message="tns:IWsTramitesInstitucionLinea_pagoServicio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listAnuladosPagos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listAnuladosPagos" message="tns:IWsTramitesInstitucionLinea_listAnuladosPagos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listAnuladosPagosResponse" message="tns:IWsTramitesInstitucionLinea_listAnuladosPagos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listPagosDocumento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listPagosDocumento" message="tns:IWsTramitesInstitucionLinea_listPagosDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsTramitesInstitucionLinea/listPagosDocumentoResponse" message="tns:IWsTramitesInstitucionLinea_listPagosDocumento_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWsTramitesInstitucionLinea" type="tns:IWsTramitesInstitucionLinea">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="listCatalogos">
+      <soap:operation soapAction="http://tempuri.org/IWsTramitesInstitucionLinea/listCatalogos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listPagos">
+      <soap:operation soapAction="http://tempuri.org/IWsTramitesInstitucionLinea/listPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listPagosServicio">
+      <soap:operation soapAction="http://tempuri.org/IWsTramitesInstitucionLinea/listPagosServicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pagoServicio">
+      <soap:operation soapAction="http://tempuri.org/IWsTramitesInstitucionLinea/pagoServicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listAnuladosPagos">
+      <soap:operation soapAction="http://tempuri.org/IWsTramitesInstitucionLinea/listAnuladosPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listPagosDocumento">
+      <soap:operation soapAction="http://tempuri.org/IWsTramitesInstitucionLinea/listPagosDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsTramitesInstitucionLinea">
+    <wsdl:port name="BasicHttpBinding_IWsTramitesInstitucionLinea" binding="tns:BasicHttpBinding_IWsTramitesInstitucionLinea">
+      <soap:address location="http://wstramiteslineapruebas.dgi.gob.ni/WsTramitesInstitucionLinea.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

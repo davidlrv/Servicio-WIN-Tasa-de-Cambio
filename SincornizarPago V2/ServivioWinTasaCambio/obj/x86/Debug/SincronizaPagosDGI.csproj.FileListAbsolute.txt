@@ -1,0 +1,18 @@
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe.config
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.SincronizarPagosDGI.resources
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ProjectInstaller.resources
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\obj\x86\Debug\SincronizaPagosDGI.csproj.GenerateResource.Cache
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago\ServivioWinTasaCambio\obj\x86\Debug\SincronizaPagosDGI.csprojResolveAssemblyReference.cache
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe.config
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\obj\x86\Debug\SincronizaPagosDGI.csprojResolveAssemblyReference.cache
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.SincronizarPagosDGI.resources
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ProjectInstaller.resources
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\SincornizarPago V2\ServivioWinTasaCambio\obj\x86\Debug\SincronizaPagosDGI.csproj.GenerateResource.Cache

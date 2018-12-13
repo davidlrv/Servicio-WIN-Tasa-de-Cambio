@@ -1,0 +1,5 @@
+Al proyecto de prueba se le cambio unicamente  la version en el intalador
+para permitir dos intalaciones del mismo servicio en el mismo equipo
+
+davidlrvg@gmail.com	
+Nicaragua#19

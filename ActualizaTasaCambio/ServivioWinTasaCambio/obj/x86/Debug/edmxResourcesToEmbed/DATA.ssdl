@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SFPRM.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SFPRMStoreContainer">
+    <EntitySet Name="TipoCambio" EntityType="SFPRM.Store.TipoCambio" store:Type="Tables" Schema="VU" />
+    <EntitySet Name="vwXSAValorDominio" EntityType="SFPRM.Store.vwXSAValorDominio" store:Type="Views" store:Schema="dbo" store:Name="vwXSAValorDominio">
+      <DefiningQuery>SELECT 
+      [vwXSAValorDominio].[CodigoDominio] AS [CodigoDominio], 
+      [vwXSAValorDominio].[NombreDominio] AS [NombreDominio], 
+      [vwXSAValorDominio].[CodigoValor] AS [CodigoValor], 
+      [vwXSAValorDominio].[NombreValor] AS [NombreValor], 
+      [vwXSAValorDominio].[EsActivoDominio] AS [EsActivoDominio], 
+      [vwXSAValorDominio].[EsActivoValor] AS [EsActivoValor]
+      FROM [dbo].[vwXSAValorDominio] AS [vwXSAValorDominio]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="TipoCambio">
+    <Key>
+      <PropertyRef Name="IdTipoCambio" />
+    </Key>
+    <Property Name="IdTipoCambio" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Fecha" Type="date" />
+    <Property Name="Valor" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="IdEstatus" Type="int" />
+    <Property Name="EsActivo" Type="bit" />
+    <Property Name="FechaRegistro" Type="datetime" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="UserPC" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="UserIP" Type="nvarchar" Nullable="false" MaxLength="64" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'SFPRM3.dbo.vwXSAValorDominio' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="vwXSAValorDominio">
+    <Key>
+      <PropertyRef Name="CodigoDominio" />
+      <PropertyRef Name="NombreDominio" />
+      <PropertyRef Name="CodigoValor" />
+      <PropertyRef Name="NombreValor" />
+      <PropertyRef Name="EsActivoDominio" />
+      <PropertyRef Name="EsActivoValor" />
+    </Key>
+    <Property Name="CodigoDominio" Type="int" Nullable="false" />
+    <Property Name="NombreDominio" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="CodigoValor" Type="int" Nullable="false" />
+    <Property Name="NombreValor" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="EsActivoDominio" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="EsActivoValor" Type="varchar" Nullable="false" MaxLength="1" />
+  </EntityType>
+</Schema>

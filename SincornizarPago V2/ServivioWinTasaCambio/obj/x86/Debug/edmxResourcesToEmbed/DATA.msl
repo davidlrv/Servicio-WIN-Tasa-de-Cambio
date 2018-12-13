@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SFPRMStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="vwXSAValorDominio">
+      <EntityTypeMapping TypeName="SFPRM.vwXSAValorDominio">
+        <MappingFragment StoreEntitySet="vwXSAValorDominio">
+          <ScalarProperty Name="EsActivoValor" ColumnName="EsActivoValor" />
+          <ScalarProperty Name="EsActivoDominio" ColumnName="EsActivoDominio" />
+          <ScalarProperty Name="NombreValor" ColumnName="NombreValor" />
+          <ScalarProperty Name="CodigoValor" ColumnName="CodigoValor" />
+          <ScalarProperty Name="NombreDominio" ColumnName="NombreDominio" />
+          <ScalarProperty Name="CodigoDominio" ColumnName="CodigoDominio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoCambio">
+      <EntityTypeMapping TypeName="SFPRM.TipoCambio">
+        <MappingFragment StoreEntitySet="TipoCambio">
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="UserPC" ColumnName="UserPC" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+          <ScalarProperty Name="EsActivo" ColumnName="EsActivo" />
+          <ScalarProperty Name="IdEstatus" ColumnName="IdEstatus" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="IdTipoCambio" ColumnName="IdTipoCambio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

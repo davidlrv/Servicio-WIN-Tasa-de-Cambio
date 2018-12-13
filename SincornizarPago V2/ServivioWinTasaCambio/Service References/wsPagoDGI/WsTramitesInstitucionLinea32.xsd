@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDetalleCatalogoInstitucion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DetalleCatalogoInstitucion" nillable="true" type="tns:DetalleCatalogoInstitucion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDetalleCatalogoInstitucion" nillable="true" type="tns:ArrayOfDetalleCatalogoInstitucion" />
+  <xs:complexType name="DetalleCatalogoInstitucion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ListaCatalogoConcepto" nillable="true" type="tns:ArrayOfEnti_CatalogoConcepto" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DetalleCatalogoInstitucion" nillable="true" type="tns:DetalleCatalogoInstitucion" />
+  <xs:complexType name="ArrayOfEnti_CatalogoConcepto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Enti_CatalogoConcepto" nillable="true" type="tns:Enti_CatalogoConcepto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnti_CatalogoConcepto" nillable="true" type="tns:ArrayOfEnti_CatalogoConcepto" />
+  <xs:complexType name="Enti_CatalogoConcepto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ListDetalleConceptos" nillable="true" type="tns:ArrayOfEnti_DetalleConceptos" />
+      <xs:element minOccurs="0" name="catalogoconcepto_id" type="xs:int" />
+      <xs:element minOccurs="0" name="codigoconcepto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoimpuesto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Enti_CatalogoConcepto" nillable="true" type="tns:Enti_CatalogoConcepto" />
+  <xs:complexType name="ArrayOfEnti_DetalleConceptos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Enti_DetalleConceptos" nillable="true" type="tns:Enti_DetalleConceptos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEnti_DetalleConceptos" nillable="true" type="tns:ArrayOfEnti_DetalleConceptos" />
+  <xs:complexType name="Enti_DetalleConceptos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inciso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="monto" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="tipomonto" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Enti_DetalleConceptos" nillable="true" type="tns:Enti_DetalleConceptos" />
+  <xs:complexType name="ArrayOfPagos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pagos" nillable="true" type="tns:Pagos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPagos" nillable="true" type="tns:ArrayOfPagos" />
+  <xs:complexType name="Pagos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="banco" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cedula" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoimpuesto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoservicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechapago" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="monto" type="xs:decimal" />
+      <xs:element minOccurs="0" name="nodocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombrebeneficiario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="voucher" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pagos" nillable="true" type="tns:Pagos" />
+</xs:schema>

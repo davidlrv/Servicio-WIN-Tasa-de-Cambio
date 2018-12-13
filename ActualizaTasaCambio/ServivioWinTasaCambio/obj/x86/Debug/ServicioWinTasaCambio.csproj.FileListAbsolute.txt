@@ -1,0 +1,37 @@
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe.config
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ActualizaTasaCambio.resources
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ProjectInstaller.resources
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServicioWinTasaCambio.csproj.GenerateResource.Cache
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\DAVID RIVAS VARGAR\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe.config
+C:\Users\drivas\Documents\DAVID RIVAS VARGAR\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\DAVID RIVAS VARGAR\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\DAVID RIVAS VARGAR\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ActualizaTasaCambio.resources
+C:\Users\drivas\Documents\DAVID RIVAS VARGAR\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ProjectInstaller.resources
+C:\Users\drivas\Documents\DAVID RIVAS VARGAR\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServicioWinTasaCambio.csproj.GenerateResource.Cache
+C:\Users\drivas\Documents\DAVID RIVAS VARGAR\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\DAVID RIVAS VARGAR\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe.config
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServicioWinTasaCambio.csprojResolveAssemblyReference.cache
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ActualizaTasaCambio.resources
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ProjectInstaller.resources
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Instalador Servicio Tasa de Cambio Prueba\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServicioWinTasaCambio.csproj.GenerateResource.Cache
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe.config
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\DAVID RIVAS VARGAS\FolioPersonal\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe.config
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServicioWinTasaCambio.csprojResolveAssemblyReference.cache
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ActualizaTasaCambio.resources
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ProjectInstaller.resources
+C:\Users\drivas\Documents\Servicio WIN Tasa de Cambio\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServicioWinTasaCambio.csproj.GenerateResource.Cache

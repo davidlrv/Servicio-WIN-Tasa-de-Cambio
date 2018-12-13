@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TasacionEnLineaBDStoreContainer" CdmEntityContainer="TasacionEnLineaEntities">
+    <EntitySetMapping Name="BancoCuenta">
+      <EntityTypeMapping TypeName="TasacionEnLineaBD.BancoCuenta">
+        <MappingFragment StoreEntitySet="BancoCuenta">
+          <ScalarProperty Name="IdCuenta" ColumnName="IdCuenta" />
+          <ScalarProperty Name="Codbco" ColumnName="Codbco" />
+          <ScalarProperty Name="CodCta" ColumnName="CodCta" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdTipoIngreso" ColumnName="IdTipoIngreso" />
+          <ScalarProperty Name="IdMoneda" ColumnName="IdMoneda" />
+          <ScalarProperty Name="esActivo" ColumnName="esActivo" />
+          <ScalarProperty Name="IdCuentaFolio" ColumnName="IdCuentaFolio" />
+          <ScalarProperty Name="esImprimible" ColumnName="esImprimible" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CotizacionWeb">
+      <EntityTypeMapping TypeName="TasacionEnLineaBD.CotizacionWeb">
+        <MappingFragment StoreEntitySet="CotizacionWeb">
+          <ScalarProperty Name="IdCotizacionWeb" ColumnName="IdCotizacionWeb" />
+          <ScalarProperty Name="IdCotizacionPadre" ColumnName="IdCotizacionPadre" />
+          <ScalarProperty Name="IdDepartamento" ColumnName="IdDepartamento" />
+          <ScalarProperty Name="IdSolicitante" ColumnName="IdSolicitante" />
+          <ScalarProperty Name="NoCotizacion" ColumnName="NoCotizacion" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="IdTipoOrden" ColumnName="IdTipoOrden" />
+          <ScalarProperty Name="AFavorDe" ColumnName="AFavorDe" />
+          <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+          <ScalarProperty Name="NoDocumento" ColumnName="NoDocumento" />
+          <ScalarProperty Name="IdEstadoCotizacion" ColumnName="IdEstadoCotizacion" />
+          <ScalarProperty Name="Ingresada" ColumnName="Ingresada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PagoDocumento">
+      <EntityTypeMapping TypeName="TasacionEnLineaBD.PagoDocumento">
+        <MappingFragment StoreEntitySet="PagoDocumento">
+          <ScalarProperty Name="IdPago" ColumnName="IdPago" />
+          <ScalarProperty Name="NoDocSoporteBco" ColumnName="NoDocSoporteBco" />
+          <ScalarProperty Name="IdCotizacionWeb" ColumnName="IdCotizacionWeb" />
+          <ScalarProperty Name="MontoPago" ColumnName="MontoPago" />
+          <ScalarProperty Name="IndPago" ColumnName="IndPago" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+          <ScalarProperty Name="HoraPago" ColumnName="HoraPago" />
+          <ScalarProperty Name="IdEstadoPago" ColumnName="IdEstadoPago" />
+          <ScalarProperty Name="SucBco" ColumnName="SucBco" />
+          <ScalarProperty Name="CajaBanco" ColumnName="CajaBanco" />
+          <ScalarProperty Name="FechaAnulacion" ColumnName="FechaAnulacion" />
+          <ScalarProperty Name="FechaConciliacion" ColumnName="FechaConciliacion" />
+          <ScalarProperty Name="PagoConciliado" ColumnName="PagoConciliado" />
+          <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="siglasBanco" ColumnName="siglasBanco" />
+          <ScalarProperty Name="NoCuenta" ColumnName="NoCuenta" />
+          <ScalarProperty Name="IdCuenta" ColumnName="IdCuenta" />
+          <ScalarProperty Name="NoDocumentoPagado" ColumnName="NoDocumentoPagado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwXSAValorDominio">
+      <EntityTypeMapping TypeName="TasacionEnLineaBD.vwXSAValorDominio">
+        <MappingFragment StoreEntitySet="vwXSAValorDominio">
+          <ScalarProperty Name="EsActivoValor" ColumnName="EsActivoValor" />
+          <ScalarProperty Name="EsActivoDominio" ColumnName="EsActivoDominio" />
+          <ScalarProperty Name="NombreValor" ColumnName="NombreValor" />
+          <ScalarProperty Name="CodigoValor" ColumnName="CodigoValor" />
+          <ScalarProperty Name="NombreDominio" ColumnName="NombreDominio" />
+          <ScalarProperty Name="CodigoDominio" ColumnName="CodigoDominio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

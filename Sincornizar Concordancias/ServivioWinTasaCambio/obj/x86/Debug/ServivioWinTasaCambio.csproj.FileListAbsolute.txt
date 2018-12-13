@@ -1,0 +1,9 @@
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe.config
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\bin\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ActualizaTasaCambio.resources
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.ProjectInstaller.resources
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.csproj.GenerateResource.Cache
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.exe
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.pdb
+C:\Users\drivas\Documents\Visual Studio 2010\Projects\ActualizaTasaCambio\ServivioWinTasaCambio\obj\x86\Debug\ServivioWinTasaCambio.csprojResolveAssemblyReference.cache

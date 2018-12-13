@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TasacionEnLineaBD" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TasacionEnLineaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BancoCuenta" EntityType="TasacionEnLineaBD.BancoCuenta" />
+    <EntitySet Name="CotizacionWeb" EntityType="TasacionEnLineaBD.CotizacionWeb" />
+    <EntitySet Name="PagoDocumento" EntityType="TasacionEnLineaBD.PagoDocumento" />
+    <AssociationSet Name="FK__PagoDocum__IdCue__408F9238" Association="TasacionEnLineaBD.FK__PagoDocum__IdCue__408F9238">
+      <End Role="BancoCuenta" EntitySet="BancoCuenta" />
+      <End Role="PagoDocumento" EntitySet="PagoDocumento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PagoDocum__IdCot__7720AD13" Association="TasacionEnLineaBD.FK__PagoDocum__IdCot__7720AD13">
+      <End Role="CotizacionWeb" EntitySet="CotizacionWeb" />
+      <End Role="PagoDocumento" EntitySet="PagoDocumento" />
+    </AssociationSet>
+    <EntitySet Name="vwXSAValorDominio" EntityType="TasacionEnLineaBD.vwXSAValorDominio" />
+  </EntityContainer>
+  <EntityType Name="BancoCuenta">
+    <Key>
+      <PropertyRef Name="IdCuenta" />
+    </Key>
+    <Property Name="IdCuenta" Type="Guid" Nullable="false" />
+    <Property Name="Codbco" Type="Int32" Nullable="false" />
+    <Property Name="CodCta" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="IdTipoIngreso" Type="Int32" Nullable="false" />
+    <Property Name="IdMoneda" Type="Int32" Nullable="false" />
+    <Property Name="esActivo" Type="Boolean" Nullable="false" />
+    <Property Name="IdCuentaFolio" Type="Guid" />
+    <Property Name="esImprimible" Type="Boolean" />
+    <NavigationProperty Name="PagoDocumento" Relationship="TasacionEnLineaBD.FK__PagoDocum__IdCue__408F9238" FromRole="BancoCuenta" ToRole="PagoDocumento" />
+  </EntityType>
+  <EntityType Name="CotizacionWeb">
+    <Key>
+      <PropertyRef Name="IdCotizacionWeb" />
+    </Key>
+    <Property Name="IdCotizacionWeb" Type="Guid" Nullable="false" />
+    <Property Name="IdCotizacionPadre" Type="Guid" />
+    <Property Name="IdDepartamento" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="IdSolicitante" Type="Guid" Nullable="false" />
+    <Property Name="NoCotizacion" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="Monto" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="IdTipoOrden" Type="Int32" Nullable="false" />
+    <Property Name="AFavorDe" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="FechaRegistro" Type="DateTime" Nullable="false" />
+    <Property Name="NoDocumento" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="IdEstadoCotizacion" Type="Int32" />
+    <Property Name="Ingresada" Type="Boolean" />
+    <NavigationProperty Name="PagoDocumento" Relationship="TasacionEnLineaBD.FK__PagoDocum__IdCot__7720AD13" FromRole="CotizacionWeb" ToRole="PagoDocumento" />
+  </EntityType>
+  <EntityType Name="PagoDocumento">
+    <Key>
+      <PropertyRef Name="IdPago" />
+    </Key>
+    <Property Name="IdPago" Type="Guid" Nullable="false" />
+    <Property Name="NoDocSoporteBco" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="IdCotizacionWeb" Type="Guid" />
+    <Property Name="MontoPago" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="IndPago" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="FechaPago" Type="DateTime" Nullable="false" />
+    <Property Name="HoraPago" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="IdEstadoPago" Type="Int32" Nullable="false" />
+    <Property Name="SucBco" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="CajaBanco" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="FechaAnulacion" Type="DateTime" />
+    <Property Name="FechaConciliacion" Type="DateTime" />
+    <Property Name="PagoConciliado" Type="Boolean" Nullable="false" />
+    <Property Name="Identificacion" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="Comentario" Type="String" MaxLength="512" Unicode="true" FixedLength="false" />
+    <Property Name="siglasBanco" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="NoCuenta" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="IdCuenta" Type="Guid" />
+    <Property Name="NoDocumentoPagado" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="BancoCuenta" Relationship="TasacionEnLineaBD.FK__PagoDocum__IdCue__408F9238" FromRole="PagoDocumento" ToRole="BancoCuenta" />
+    <NavigationProperty Name="CotizacionWeb" Relationship="TasacionEnLineaBD.FK__PagoDocum__IdCot__7720AD13" FromRole="PagoDocumento" ToRole="CotizacionWeb" />
+  </EntityType>
+  <Association Name="FK__PagoDocum__IdCue__408F9238">
+    <End Role="BancoCuenta" Type="TasacionEnLineaBD.BancoCuenta" Multiplicity="0..1" />
+    <End Role="PagoDocumento" Type="TasacionEnLineaBD.PagoDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BancoCuenta">
+        <PropertyRef Name="IdCuenta" />
+      </Principal>
+      <Dependent Role="PagoDocumento">
+        <PropertyRef Name="IdCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PagoDocum__IdCot__7720AD13">
+    <End Role="CotizacionWeb" Type="TasacionEnLineaBD.CotizacionWeb" Multiplicity="0..1" />
+    <End Role="PagoDocumento" Type="TasacionEnLineaBD.PagoDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CotizacionWeb">
+        <PropertyRef Name="IdCotizacionWeb" />
+      </Principal>
+      <Dependent Role="PagoDocumento">
+        <PropertyRef Name="IdCotizacionWeb" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="vwXSAValorDominio">
+    <Key>
+      <PropertyRef Name="CodigoDominio" />
+      <PropertyRef Name="NombreDominio" />
+      <PropertyRef Name="CodigoValor" />
+      <PropertyRef Name="NombreValor" />
+      <PropertyRef Name="EsActivoDominio" />
+      <PropertyRef Name="EsActivoValor" />
+    </Key>
+    <Property Type="Int32" Name="CodigoDominio" Nullable="false" />
+    <Property Type="String" Name="NombreDominio" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CodigoValor" Nullable="false" />
+    <Property Type="String" Name="NombreValor" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EsActivoDominio" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EsActivoValor" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

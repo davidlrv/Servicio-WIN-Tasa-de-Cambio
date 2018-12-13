@@ -1,0 +1,3 @@
+Esta Version sincroniza todo un periodo
+
+ //sc delete CSJ_SINCRONIZAR_PAGO_DGI  Para despues de desintalar

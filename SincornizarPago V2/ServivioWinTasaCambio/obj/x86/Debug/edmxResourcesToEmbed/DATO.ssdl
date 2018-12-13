@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TasacionEnLineaBD.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="TasacionEnLineaBDStoreContainer">
+    <EntitySet Name="BancoCuenta" EntityType="TasacionEnLineaBD.Store.BancoCuenta" store:Type="Tables" Schema="WEB" />
+    <EntitySet Name="CotizacionWeb" EntityType="TasacionEnLineaBD.Store.CotizacionWeb" store:Type="Tables" Schema="WEB" />
+    <EntitySet Name="PagoDocumento" EntityType="TasacionEnLineaBD.Store.PagoDocumento" store:Type="Tables" Schema="WEB" />
+    <EntitySet Name="vwXSAValorDominio" EntityType="TasacionEnLineaBD.Store.vwXSAValorDominio" store:Type="Views" store:Schema="dbo" store:Name="vwXSAValorDominio">
+      <DefiningQuery>SELECT 
+      [vwXSAValorDominio].[CodigoDominio] AS [CodigoDominio], 
+      [vwXSAValorDominio].[NombreDominio] AS [NombreDominio], 
+      [vwXSAValorDominio].[CodigoValor] AS [CodigoValor], 
+      [vwXSAValorDominio].[NombreValor] AS [NombreValor], 
+      [vwXSAValorDominio].[EsActivoDominio] AS [EsActivoDominio], 
+      [vwXSAValorDominio].[EsActivoValor] AS [EsActivoValor]
+      FROM [dbo].[vwXSAValorDominio] AS [vwXSAValorDominio]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__PagoDocum__IdCot__7720AD13" Association="TasacionEnLineaBD.Store.FK__PagoDocum__IdCot__7720AD13">
+      <End Role="CotizacionWeb" EntitySet="CotizacionWeb" />
+      <End Role="PagoDocumento" EntitySet="PagoDocumento" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PagoDocum__IdCue__408F9238" Association="TasacionEnLineaBD.Store.FK__PagoDocum__IdCue__408F9238">
+      <End Role="BancoCuenta" EntitySet="BancoCuenta" />
+      <End Role="PagoDocumento" EntitySet="PagoDocumento" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BancoCuenta">
+    <Key>
+      <PropertyRef Name="IdCuenta" />
+    </Key>
+    <Property Name="IdCuenta" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Codbco" Type="int" Nullable="false" />
+    <Property Name="CodCta" Type="nvarchar" MaxLength="128" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="256" />
+    <Property Name="IdTipoIngreso" Type="int" Nullable="false" />
+    <Property Name="IdMoneda" Type="int" Nullable="false" />
+    <Property Name="esActivo" Type="bit" Nullable="false" />
+    <Property Name="IdCuentaFolio" Type="uniqueidentifier" />
+    <Property Name="esImprimible" Type="bit" />
+  </EntityType>
+  <EntityType Name="CotizacionWeb">
+    <Key>
+      <PropertyRef Name="IdCotizacionWeb" />
+    </Key>
+    <Property Name="IdCotizacionWeb" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="IdCotizacionPadre" Type="uniqueidentifier" />
+    <Property Name="IdDepartamento" Type="char" MaxLength="2" />
+    <Property Name="IdSolicitante" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NoCotizacion" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="Monto" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="IdTipoOrden" Type="int" Nullable="false" />
+    <Property Name="AFavorDe" Type="nvarchar" MaxLength="256" />
+    <Property Name="FechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="NoDocumento" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="IdEstadoCotizacion" Type="int" />
+    <Property Name="Ingresada" Type="bit" />
+  </EntityType>
+  <EntityType Name="PagoDocumento">
+    <Key>
+      <PropertyRef Name="IdPago" />
+    </Key>
+    <Property Name="IdPago" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NoDocSoporteBco" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="IdCotizacionWeb" Type="uniqueidentifier" />
+    <Property Name="MontoPago" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="IndPago" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="FechaPago" Type="datetime" Nullable="false" />
+    <Property Name="HoraPago" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="IdEstadoPago" Type="int" Nullable="false" />
+    <Property Name="SucBco" Type="nvarchar" MaxLength="32" />
+    <Property Name="CajaBanco" Type="nvarchar" MaxLength="32" />
+    <Property Name="FechaAnulacion" Type="datetime" />
+    <Property Name="FechaConciliacion" Type="datetime" />
+    <Property Name="PagoConciliado" Type="bit" Nullable="false" />
+    <Property Name="Identificacion" Type="nvarchar" MaxLength="32" />
+    <Property Name="Comentario" Type="nvarchar" MaxLength="512" />
+    <Property Name="siglasBanco" Type="nvarchar" MaxLength="128" />
+    <Property Name="NoCuenta" Type="nvarchar" MaxLength="128" />
+    <Property Name="IdCuenta" Type="uniqueidentifier" />
+    <Property Name="NoDocumentoPagado" Type="nvarchar" MaxLength="32" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'TasacionEnLinea.dbo.vwXSAValorDominio' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="vwXSAValorDominio">
+    <Key>
+      <PropertyRef Name="CodigoDominio" />
+      <PropertyRef Name="NombreDominio" />
+      <PropertyRef Name="CodigoValor" />
+      <PropertyRef Name="NombreValor" />
+      <PropertyRef Name="EsActivoDominio" />
+      <PropertyRef Name="EsActivoValor" />
+    </Key>
+    <Property Name="CodigoDominio" Type="int" Nullable="false" />
+    <Property Name="NombreDominio" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="CodigoValor" Type="int" Nullable="false" />
+    <Property Name="NombreValor" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="EsActivoDominio" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="EsActivoValor" Type="varchar" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK__PagoDocum__IdCot__7720AD13">
+    <End Role="CotizacionWeb" Type="TasacionEnLineaBD.Store.CotizacionWeb" Multiplicity="0..1" />
+    <End Role="PagoDocumento" Type="TasacionEnLineaBD.Store.PagoDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CotizacionWeb">
+        <PropertyRef Name="IdCotizacionWeb" />
+      </Principal>
+      <Dependent Role="PagoDocumento">
+        <PropertyRef Name="IdCotizacionWeb" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PagoDocum__IdCue__408F9238">
+    <End Role="BancoCuenta" Type="TasacionEnLineaBD.Store.BancoCuenta" Multiplicity="0..1" />
+    <End Role="PagoDocumento" Type="TasacionEnLineaBD.Store.PagoDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BancoCuenta">
+        <PropertyRef Name="IdCuenta" />
+      </Principal>
+      <Dependent Role="PagoDocumento">
+        <PropertyRef Name="IdCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
